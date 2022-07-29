@@ -413,10 +413,6 @@ section img {
     margin-bottom: 50px;
 }
 
-#myBtnContainer>div:nth-child(4) {
-    width: 20%
-}
-
 /* Filter for Projects */
 
 .filter {
@@ -464,6 +460,10 @@ section img {
     width: 10%;
     cursor: pointer;
     outline: none !important;
+}
+
+.btn .graphic {
+    width: 20%
 }
 .link {
     position: absolute;
