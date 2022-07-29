@@ -531,7 +531,7 @@ section img {
     background-position: center;
     background-size: cover;
 }
-.filterContainer>div:nth-child(8) div.projectBackground {
+.filterContainer>div:nth-child(7) div.projectBackground {
     position: absolute;
     height: 100%;
     width: 100%;
