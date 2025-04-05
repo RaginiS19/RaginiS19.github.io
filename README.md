@@ -53,23 +53,23 @@ To get started, you'll need the following:
 
 ## API Endpoints
 
-# List All Teachers
+### List All Teachers
 
 GET /api/TeacherData/ListTeachers
 
-# Search Teachers
+### Search Teachers
 
 GET /api/TeacherData/ListTeachers/{SearchKey?}
 
-# Get Teacher Details by ID
+### Get Teacher Details by ID
 
 GET /api/TeacherData/FindTeacher/{id}
 
-# Add a New Teacher
+### Add a New Teacher
 
 POST /api/TeacherData/AddTeacher
 
-# Request Body (JSON format):
+### Request Body (JSON format):
 
 {
   "TeacherFname": "FirstName",
@@ -79,25 +79,25 @@ POST /api/TeacherData/AddTeacher
   "Salary": 55
 }
 
-# Delete a Teacher by ID
+### Delete a Teacher by ID
 
 POST /api/TeacherData/DeleteTeacher/{id}
 
 ### API Endpoints
 
-# List All Teachers
+### List All Teachers
 GET /api/TeacherData/ListTeachers
 
-# Search Teachers
+### Search Teachers
 GET /api/TeacherData/ListTeachers/{SearchKey?}
 
-# Get Teacher Details by ID
+### Get Teacher Details by ID
 GET /api/TeacherData/FindTeacher/{id}
 
-# Add a New Teacher
+### Add a New Teacher
 POST /api/TeacherData/AddTeacher
 
-# Request Body (JSON format):
+### Request Body (JSON format):
 {
   "TeacherFname": "FirstName",
   "TeacherLname": "Lastname",
@@ -106,19 +106,19 @@ POST /api/TeacherData/AddTeacher
   "Salary": 55
 }
 
-# Delete a Teacher by ID
+### Delete a Teacher by ID
 
 POST /api/TeacherData/DeleteTeacher/{id}
 
 
-# Testing the APIs
-# List all teachers
+### Testing the APIs
+### List all teachers
 curl http://localhost:<your_port>/api/TeacherData/ListTeachers
 
-# Find a teacher by ID
+### Find a teacher by ID
 curl http://localhost:<your_port>/api/TeacherData/FindTeacher/1
 
-# Add a new teacher (example with JSON data)
+### Add a new teacher (example with JSON data)
 curl -X POST -H "Content-Type: application/json" -d '{
   "TeacherFname": "John",
   "TeacherLname": "Doe",
@@ -127,7 +127,7 @@ curl -X POST -H "Content-Type: application/json" -d '{
   "Salary": 65000
 }' http://localhost:<your_port>/api/TeacherData/AddTeacher
 
-# Delete teacher with ID 3
+### Delete teacher with ID 3
 curl -X POST http://localhost:<your_port>/api/TeacherData/DeleteTeacher/3
 
 
