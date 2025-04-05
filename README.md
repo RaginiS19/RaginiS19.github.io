@@ -85,19 +85,19 @@ POST /api/TeacherData/DeleteTeacher/{id}
 
 ### API Endpoints
 
-## List All Teachers
+# List All Teachers
 GET /api/TeacherData/ListTeachers
 
-## Search Teachers
+# Search Teachers
 GET /api/TeacherData/ListTeachers/{SearchKey?}
 
-## Get Teacher Details by ID
+# Get Teacher Details by ID
 GET /api/TeacherData/FindTeacher/{id}
 
-## Add a New Teacher
+# Add a New Teacher
 POST /api/TeacherData/AddTeacher
 
-## Request Body (JSON format):
+# Request Body (JSON format):
 {
   "TeacherFname": "FirstName",
   "TeacherLname": "Lastname",
@@ -106,12 +106,12 @@ POST /api/TeacherData/AddTeacher
   "Salary": 55
 }
 
-## Delete a Teacher by ID
+# Delete a Teacher by ID
 
 POST /api/TeacherData/DeleteTeacher/{id}
 
 
-## Testing the APIs
+# Testing the APIs
 # List all teachers
 curl http://localhost:<your_port>/api/TeacherData/ListTeachers
 
